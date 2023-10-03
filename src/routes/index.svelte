@@ -1,5 +1,5 @@
 <script>
-    import Countries from "../components/countries.svelte";
+	import Countries from '../components/countries.svelte';
 </script>
 
-<Countries/>
+<Countries />
