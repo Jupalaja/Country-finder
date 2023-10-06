@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
 	import { onDestroy } from 'svelte';
 	import { countries } from '../store/countries';
 	import { countryFilter } from '../store/filter';
 	import Filter from '../components/filter.svelte';
 
-	let countriesList = [];
-	let originalData = [];
+	let countriesList = [] as any;
+	let originalData = [] as any;
 	let countriesUnsubscribe = countries.subscribe((list) => {
 		countriesList = [...list];
 		originalData = [...list];
